@@ -1,4 +1,5 @@
-# textlint-rule-no-todo
+# textlint-rule-no-todo [![Build Status](https://travis-ci.org/azu/textlint-rule-no-todo.svg?branch=master)](https://travis-ci.org/azu/textlint-rule-no-todo)
+
 
 It is [textlint](https://github.com/azu/textlint "textlint") rule.
 
