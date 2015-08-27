@@ -9,6 +9,8 @@ It is [textlint](https://github.com/azu/textlint "textlint") rule.
 
 ## Usage
 
+See [example/](example/)
+
     $ npm install textlint-rule-no-todo
     $ textlint --rule no-todo README.md
 
