@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "npm install",
     "test": "textlint --rule no-todo README.md; test $? -eq 1"
   },
   "author": "azu",
   "license": "MIT",
   "dependencies": {
-    "textlint": "^3.2.0"
+    "textlint": "^3.2.0",
+    "textlint-rule-no-todo": "file:.."
   }
 }

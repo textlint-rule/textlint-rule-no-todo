@@ -25,7 +25,7 @@
     "build": "babel src --out-dir lib --source-maps",
     "watch": "babel src --out-dir lib --watch --source-maps",
     "prepublish": "npm run --if-present build",
-    "test": "npm run build && mocha"
+    "test": "npm run build && mocha && (cd example && npm test)"
   },
   "keywords": [
     "textlint",
