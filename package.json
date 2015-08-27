@@ -1,5 +1,6 @@
 {
   "name": "textlint-rule-no-todo",
+  "description": "textlint rule: warn TODO text.",
   "repository": {
     "type": "git",
     "url": "https://github.com/azu/textlint-rule-no-todo.git"
@@ -12,7 +13,7 @@
     "url": "https://github.com/azu/textlint-rule-no-todo/issues"
   },
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/no-todo.js",
   "directories": {
     "test": "test"
   },
@@ -20,7 +21,7 @@
     "build": "babel src --out-dir lib --source-maps",
     "watch": "babel src --out-dir lib --watch --source-maps",
     "prepublish": "npm run --if-present build",
-    "test": "mocha"
+    "test": "npm run build && mocha"
   },
   "keywords": [
     "textlint",
