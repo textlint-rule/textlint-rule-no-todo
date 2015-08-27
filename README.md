@@ -10,7 +10,7 @@ It is [textlint](https://github.com/azu/textlint "textlint") rule.
 ## Usage
 
     $ npm install textlint-rule-no-todo
-    $ textlint --rule no-todo
+    $ textlint --rule no-todo README.md
 
 ## Tests
 
