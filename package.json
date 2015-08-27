@@ -37,7 +37,7 @@
     "espower-babel": "^3.3.0",
     "mocha": "^2.2.5",
     "power-assert": "^1.0.0",
-    "textlint": "^3.1.2"
+    "textlint": "^3.2.0"
   },
   "dependencies": {
     "textlint-rule-helper": "^1.1.3"

@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "textlint --rule no-todo README.md; test $? -eq 1"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "dependencies": {
+    "textlint": "^3.2.0"
+  }
+}
