@@ -1,38 +1,48 @@
 // LICENSE : MIT
 "use strict";
-import {RuleHelper} from "textlint-rule-helper"
+import {RuleHelper} from "textlint-rule-helper";
 /**
  * @param {RuleContext} context
  */
 export default function (context) {
-    var helper = new RuleHelper(context);
-    var Syntax = context.Syntax;
+    const helper = new RuleHelper(context);
+    const {Syntax, getSource, RuleError, report} = context;
     return {
         /*
+        Match pattern
+
             # Header
-            Todo: quick fix this.
+            TODO: quick fix this.
         */
         [Syntax.Str](node) {
-            var Syntax = context.Syntax;
             if (helper.isChildNode(node, [Syntax.Link, Syntax.Image, Syntax.BlockQuote])) {
                 return;
             }
             // get text from node
-            var text = context.getSource(node);
+            const text = getSource(node);
             // does text contain "todo:"?
-            if (/todo:/i.test(text)) {
-                context.report(node, new context.RuleError("found TODO: '" + text + "'"));
+            const match = text.match(/todo:/i);
+            if (match) {
+                const todoText = text.substring(match.index);
+                report(node, new RuleError(`Found TODO: '${todoText}'`, {
+                    index: match.index
+                }));
             }
         },
         /*
+        Match Pattern
+
             # Header
             - [ ] Todo
         */
         [Syntax.ListItem](node) {
-            var text = context.getSource(node);
-            if (/\[\s+\]\s/i.test(text)) {
-                context.report(node, new context.RuleError("found TODO: '" + text + "'"));
+            const text = context.getSource(node);
+            const match = text.match(/\[\s+\]\s/i);
+            if (match) {
+                report(node, new context.RuleError(`Found TODO: '${text}'`, {
+                    index: match.index
+                }));
             }
         }
-    }
-};
+    };
+}
