@@ -8,7 +8,11 @@ tester.run("no-todo", rule, {
         // no match
         "text",
         // partial match
-        "TODOS:"
+        "TODOS:",
+        // ignore node's type
+        "[TODO: this is todo](http://example.com)",
+        "![TODO: this is todo](http://example.com/img)",
+        "> TODO: this is todo"
     ],
     invalid: [
         // single match

@@ -13,6 +13,8 @@ export default function (context) {
 
             # Header
             TODO: quick fix this.
+            ^^^^^
+            Hit!
         */
         [Syntax.Str](node) {
             if (helper.isChildNode(node, [Syntax.Link, Syntax.Image, Syntax.BlockQuote])) {
@@ -34,6 +36,8 @@ export default function (context) {
 
             # Header
             - [ ] Todo
+              ^^^
+              Hit!
         */
         [Syntax.ListItem](node) {
             const text = context.getSource(node);
