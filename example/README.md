@@ -1,3 +1,0 @@
-# Example
-
-- [ ] warning TODO
