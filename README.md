@@ -1,7 +1,21 @@
-# textlint-rule-no-todo [![Build Status](https://travis-ci.org/azu/textlint-rule-no-todo.svg?branch=master)](https://travis-ci.org/azu/textlint-rule-no-todo)
+# textlint-rule-no-todo [![Build Status](https://travis-ci.org/textlint-rule/textlint-rule-no-todo.svg?branch=master)](https://travis-ci.org/textlint-rule/textlint-rule-no-todo)
 
+This [textlint](https://github.com/textlint-rule/textlint "textlint") rule check `todo` mark.
 
-It is [textlint](https://github.com/azu/textlint "textlint") rule.
+**OK**:
+
+```
+This is text.
+```
+
+**NG**:
+
+```
+TODO: this is TODO
+
+- [ ] TODO
+```
+
 
 ## Installation
 
