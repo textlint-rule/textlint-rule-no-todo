@@ -28,7 +28,7 @@
     "test": "textlint-scripts test"
   },
   "keywords": [
-    "textlint",
+    "textlintrule",
     "todo",
     "lint"
   ],
