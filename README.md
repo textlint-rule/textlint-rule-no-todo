@@ -23,8 +23,6 @@ TODO: this is TODO
 
 ## Usage
 
-See [example/](example/)
-
     $ npm install textlint-rule-no-todo
     $ textlint --rule no-todo README.md
 
