@@ -1,4 +1,4 @@
-# textlint-rule-no-todo [![Build Status](https://travis-ci.org/textlint-rule/textlint-rule-no-todo.svg?branch=master)](https://travis-ci.org/textlint-rule/textlint-rule-no-todo)
+# textlint-rule-no-todo [![Actions Status: test](https://github.com/textlint-rule/textlint-rule-no-todo/workflows/test/badge.svg)](https://github.com/textlint-rule/textlint-rule-no-todo/actions?query=workflow%3A"test")
 
 This [textlint](https://github.com/textlint-rule/textlint "textlint") rule check `todo` mark.
 
